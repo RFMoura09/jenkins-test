@@ -1,6 +1,10 @@
 pipeline {
   agent any
   
+  trigger {
+    pollSCM('H/1 * * * *')
+  }
+  
   environment {
     MY_MESSAGE = "Rafael"
   }
