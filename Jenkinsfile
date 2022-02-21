@@ -11,7 +11,9 @@ pipeline {
   
   stages {
     stage('echo some variable') {
-      echo "ola, ${MY_MESSAGE}!"
+      steps { 
+        echo "ola, ${MY_MESSAGE}!"
+      }
     }
   }
   
